@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores personalizados
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = clildren (filho)
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #0000ff;
+            text-decoration: none;
+            font-weight: lighter;
+        }
+
+        a:visited {
+            color: #ff0000;
+        }
+        
+        a:hover {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #00008b;
+        }
+
+        a::after {
+            content: ' (link)';
+            color: rgb(124, 136, 240);
+            text-decoration: none;
+        }
+
+        a::before {
+            content: 'Clicar ';
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.facebook.com/profile.php?id=100006370955501" target="_blank" rel="external">Meu Facebook</a></li>
+
+        <li><a href="https://www.instagram.com/junao_027/" target="_blank" rel="external">Meu instagram</a></li>
+
+        <li><a href="https://twitter.com/Junao027" target="_blank" rel="external">Meu Twitter</a></li>
+
+    </ul>
+</body>
+
+</html>
