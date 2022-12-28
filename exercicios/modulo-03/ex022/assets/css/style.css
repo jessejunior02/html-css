@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.card {
+    display: inline-block;
+    border: 2px solid #000;
+    border-radius: 10px;
+
+    background-color: #add8e6;
+
+    width: 300px;
+    height: 300px;
+}
+
+#first_card {
+    background-color: #0079e2;
+}
+
+#second_card {
+    background-image: linear-gradient(to bottom, #f00, rgb(255, 0, 119));
+}
+
+#third_card {
+    background-image: url('../image/pattern003.png');
+}
