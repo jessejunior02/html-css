@@ -43,18 +43,14 @@ p {
 
 #mainHeader h1 {
     font-variant: small-caps;
-    font-size: 4.5em;
+    font-size: 10vw;
     font-family: var(--font-family-title);
 }
 
-
-#mainHeader>p>a {
-    font-weight: 700;
-}
-
-#mainHeader>p>.external-links {
+.external-links {
     color: #fff;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .container {
@@ -63,15 +59,57 @@ p {
 
 .content {
     display: inline-block;
-    margin-top: 70px;
-    margin-left: 30px;
-    min-width: 350px;
-    max-width: 350px;
 }
 
 .content p {
-    line-height: 35px;
-    font-size: 20px;
+    padding-top: 2.5em;
+    padding-left: 1.5em;
+    line-height: 7vw;
+    font-size: 3.5vw;
     font-family: var(--font-family-text);
     text-align: justify;
+}
+
+.content-img {
+    position: relative;
+    margin-top: 5.5em;
+    height: 70vw;
+    box-shadow: inset 5px 7px 25px #000;
+}
+
+#firstImg {
+    background: url(../image/background001.jpg) center right no-repeat fixed;
+    background-size: 150vh;
+}
+
+#secondImg {
+    background: url(../image/background002.jpg) center left no-repeat fixed;
+    background-size: 180vh;
+}
+
+
+.content-img p {
+    position: absolute;
+    padding: 10px;
+    padding-left: 1.5vw;
+    left: 1.5em;
+    top: 10%;
+
+    background-color: rgba(0, 0, 0, 0.514);
+    color: #fff;
+
+    line-height: 7vw;
+    font-size: 3.5vw;
+    font-family: var(--font-family-text);
+    text-align: justify;
+}
+
+footer {
+    margin-top: 5em;
+    padding: 1.5vw;
+
+    background-color: var(--colorHeader);
+    color: #fff;
+
+    text-align: center;
 }

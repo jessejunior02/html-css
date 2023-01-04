@@ -1,5 +1,5 @@
 @charset "UTF-8";
 
-#mainHeader>p>.external-links:hover {
+.external-links:hover {
     text-decoration: underline;
 }
