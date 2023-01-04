@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'PassionOne';
+    src: url(../font/PassionOne-Bold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: 'Sriracha';
+    src: url(../font/Sriracha-Regular.ttf) format(truetype);
+}
+
+
+:root {
+    --colorHeader: #000;
+    --font-family-pattern: Verdana, Tahoma, sans-serif;
+    --font-family-title: 'PassionOne';
+    --font-family-text: 'Sriracha';
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+p {
+    font-family: var(--font-family-pattern);
+}
+
+
+
+
+
+#mainHeader {
+    padding: 8vh;
+
+    text-align: center;
+
+    background-color: var(--colorHeader);
+    color: #fff;
+}
+
+#mainHeader h1 {
+    font-variant: small-caps;
+    font-size: 4.5em;
+    font-family: var(--font-family-title);
+}
+
+
+#mainHeader>p>a {
+    font-weight: 700;
+}
+
+#mainHeader>p>.external-links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+     
+}
+
+.content {
+    display: inline-block;
+    margin-top: 70px;
+    margin-left: 30px;
+    min-width: 350px;
+    max-width: 350px;
+}
+
+.content p {
+    line-height: 35px;
+    font-size: 20px;
+    font-family: var(--font-family-text);
+    text-align: justify;
+}
