@@ -80,16 +80,16 @@ p {
 #firstImg {
     width: 100%;
     object-fit: cover;
-    background: url(../image/background001.jpg) center center no-repeat fixed;
-    background-size: 250vh;
+    background: url(../image/background001.jpg) right center no-repeat fixed;
+    background-size: cover;
 
 }
 
 #secondImg {
     width: 100%;
     object-fit: cover;
-    background: url(../image/background002.jpg) center left no-repeat fixed;
-    background-size: 250vh;
+    background: url(../image/background002.jpg) right center no-repeat fixed;
+    background-size: cover;
 }
 
 
