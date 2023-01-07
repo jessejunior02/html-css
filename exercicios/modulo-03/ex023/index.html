@@ -13,18 +13,24 @@
         }
 
         table {
-            height: 30em;
-            width: 30em;
+            width: 400px;
+            height: 400px;
             border-collapse: collapse;
         }
 
         tr.row-color-table {
-            background-color: #e8e8fdcc;
+            background-color: #b1b1ffcc;
         }
 
         td {
             border: 1px solid #000;
             padding: 8px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        td.number {
+            text-align: right;
         }
 
     </style>
@@ -34,7 +40,7 @@
     <h1>Minha primeira tabela</h1>
 
     <table>
-        <tr> <!-- First Row -->
+        <tr>
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
@@ -52,7 +58,7 @@
         <tr class="row-color-table">
             <td>A4</td>
             <td>B4</td>
-            <td>C4</td>
+            <td class="number">300</td>
         </tr>
         <tr>
             <td>A5</td>
