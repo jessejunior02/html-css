@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        thead, tr.mediaGrades {
+            background-color: #00f;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        th, td {
+            border: 1px solid #000;
+        }
+
+        td.schoolGrades {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Desafio 14</caption>
+
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Diciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 01</th>
+                <th scope="col">Nota 02</th>
+            </tr>
+        </thead>
+
+        <tbody>
+                <!-- First Column -->
+            <tr>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td scope="row">Matemática</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+            </tr>
+            <tr>
+                <td scope="row">Física</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+            </tr>
+            <tr>
+                <td scope="row">Química</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+            </tr>
+            <tr>
+                <td scope="row">Biologia</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+            </tr>
+            <tr class="mediaGrades">
+                <th colspan="4" scope="row">Média de Exatas</th>
+                <td class="schoolGrades">0.0</td>
+            </tr>
+
+                <!-- Second Column -->
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td scope="row">História</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+            </tr>
+            <tr>
+                <td scope="row">Geografia</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+                <td class="schoolGrades">0.0</td>
+            </tr>
+            <tr class="mediaGrades">
+                <th colspan="4" scope="row">Média de Humanas</th>
+                <td class="schoolGrades">0.0</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>
