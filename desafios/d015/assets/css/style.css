@@ -13,6 +13,8 @@ html, body {
     background: #f00;
 }
 
+
+
 main {
     position: relative;
     height: 100vh;
@@ -38,7 +40,26 @@ iframe#tela {
     position: relative;
     top: 126px;
     left: 48px;
-    
+
     height: 377px;
     width: 214px;
+}
+
+section#iconSocialNet {
+    text-align: right;
+}
+
+section#iconSocialNet>a>img {
+    width: 5vw;
+    margin: 10px;
+
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px #0000008e;
+    box-sizing: border-box;
+}
+
+section#iconSocialNet>a>img:hover {
+    box-shadow: 5px 5px 10px #0000008e;
+    transform: translate(0%, -5%);
+    transition: transform .25s;
 }
