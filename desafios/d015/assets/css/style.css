@@ -23,14 +23,17 @@ main {
     background-size: cover;
 }
 
+/* 627h 311w*/
+
 section#cell {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    height: 627px;
-    width: 311px;
+    min-height: 627px;
+    min-width: 311px;
+
 
     background: url(../image/jpg-png/frame-iphone.png) center center no-repeat fixed;
     background-size: 250px;
@@ -45,6 +48,9 @@ iframe#tela {
     width: 214px;
 }
 
+
+
+
 section#iconSocialNet {
     text-align: right;
 }
@@ -58,6 +64,7 @@ section#iconSocialNet>a>img {
     box-sizing: border-box;
 }
 
+/* Conteúdo de hover */
 section#iconSocialNet>a>img:hover {
     box-shadow: 5px 5px 10px #0000008e;
     transform: translate(0%, -5%);
