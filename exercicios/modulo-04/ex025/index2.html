@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
-
+    <title>Document</title>
     <style>
         body {
             background: rgb(253, 219, 219);
@@ -34,8 +33,8 @@
 
         }
 
-        input#email,
-        #senha {
+        input#email-usuario,
+        #senha-usuario {
             width: 50%;
             margin: 2px;
         }
@@ -46,14 +45,20 @@
     <main id="container">
         <section id="content">
             <h1> Meu primeiro formulário</h1>
-            <form action="cadrastro.php" method="post">
-                
-                <label for="email">E-mail:</label> <input type="email" name="email" id="email"> <br>
-
-                <label for="senha">Senha:</label> <input type="password" name="senha" id="senha"> <br>
-
-                <input type="submit" value="Enviar">
-            </form>
+                <form action="cadrastro.php" method="post">
+                    <div>
+                        <label for="nome-usuario">Usuário: </label>
+                        <input type="email" name="email-usuario" id="email-usuario" required size="10" placeholder="Digite seu e-mail" autocomplete="username">
+                    </div>
+                    <div>
+                        <label for="senha-usuario">Senha: </label>
+                        <input type="password" name="senha-usuario" id="senha-usuario" required minlength="8" maxlength="20" placeholder="Digite sua senha" autocomplete="current-password">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar Dados">
+                    </div>
+                </form>
         </section>
     </main>
 </body>
