@@ -5,34 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <style>
-        body {
-            background: rgb(253, 219, 219);
-            position: relative;
-        }
-
-        main#container {
-            position: relative;
-        }
-
-        section {
-            padding: 20px;
-            width: 400px;
-            height: 400px;
-            text-align: center;
-        }
-
-        section#content {
-            background-color: #fff;
-            position: absolute;
-            top: 300px;
-            left: 50%;
-
-            transform: translate(-50%, -50%);
-
-        }
-
         input#email-usuario,
         #senha-usuario {
             width: 50%;
@@ -45,20 +20,22 @@
     <main id="container">
         <section id="content">
             <h1> Meu primeiro formulário</h1>
-                <form action="cadrastro.php" method="post">
-                    <div>
-                        <label for="nome-usuario">Usuário: </label>
-                        <input type="email" name="email-usuario" id="email-usuario" required size="10" placeholder="Digite seu e-mail" autocomplete="username">
-                    </div>
-                    <div>
-                        <label for="senha-usuario">Senha: </label>
-                        <input type="password" name="senha-usuario" id="senha-usuario" required minlength="8" maxlength="20" placeholder="Digite sua senha" autocomplete="current-password">
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar Dados">
-                    </div>
-                </form>
+            <form action="cadastro.php" method="post">
+                <div>
+                    <label for="nome-usuario">Email: </label>
+                    <input type="email" name="email-usuario" id="email-usuario" required size="10"
+                        placeholder="Digite seu e-mail" autocomplete="email">
+                </div>
+                <div>
+                    <label for="senha-usuario">Senha: </label>
+                    <input type="password" name="senha-usuario" id="senha-usuario" required minlength="8" maxlength="20"
+                        placeholder="Digite sua senha" autocomplete="current-password">
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar Dados">
+                </div>
+            </form>
         </section>
     </main>
 </body>
