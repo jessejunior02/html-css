@@ -12,7 +12,44 @@
 <body> 
     <main>
         <section>
-            
+            <form action="cadastro.php" method="get">
+                <div>
+                    <label for="estado">Estado: </label>
+                    <select name="estado" id="estado">
+
+                        <optgroup label="Região Sudeste">
+                            <option value="es">Espirito Santo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sp">São Paulo</option>
+                        </optgroup>
+
+                        <optgroup label="Região Nordeste">
+                            <option value="cr">Ceará</option>
+                            <option value="pr">Pará</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="profisao">Profisão: </label>
+                    <input type="text" name="profisao" id="profisao" list="lista">
+                    <datalist id="lista">
+                        <option>Desenvolvedor</option>
+                        <option>Médico</option>
+                    </datalist>
+                </div>
+                <br>
+                <div>
+                    <label for="msg">Mensagem: </label>
+                    <br>
+                    <textarea name="msg" id="msg" cols="30" rows="15" placeholder="Escreva..."></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
         </section>
     </main>
 </body>
