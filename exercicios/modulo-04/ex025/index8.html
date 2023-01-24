@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulários</title>
 </head>
+
 <body>
-    
+    <main>
+        <section>
+            <form action="cadastro.php" method="get">
+                <div>
+                    <label for="numberOne">Número 1: </label>
+                    <input type="number" name="numberOne" id="numberOne" required oninput="soma.innerHTML = Number(numberOne.value) + Number(numberTwo.value)">
+                </div>
+                <div>
+                    <label for="numberTwo">Número 2: </label>
+                    <input type="number" name="numberTwo" id="numberTwo" required oninput="soma.innerHTML = Number(numberOne.value) + Number(numberTwo.value)">
+                </div>
+                <div>
+                    <label for="soma">Soma: </label>
+                    <output name="soma" id="soma">0</output>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>
